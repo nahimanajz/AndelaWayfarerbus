@@ -1,9 +1,9 @@
-import {jwtAuthorization} from '../helpers/authorization';
+ import {jwtAuthorization} from '../helpers/authorization';
  import  jwt  from 'jsonwebtoken';
-import  users  from '../data/users';
-import {validateUserSignup, validateUserSignin } from '../helpers/DataValidation';
+ import  users  from '../data/users';
+ import {validateUserSignup, validateUserSignin } from '../helpers/DataValidation';
 
-const usersController = {
+ const usersController = {
    
     userSignin: (req, res) => {
       const token = jwtAuthorization(req, res);
