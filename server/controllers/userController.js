@@ -1,6 +1,10 @@
  import {jwtAuthorization} from '../helpers/authorization';
  import  jwt  from 'jsonwebtoken';
+
  import users from '../data/users';
+
+ import  users  from '../data/users';
+
  import {validateUserSignup, validateUserSignin } from '../helpers/DataValidation';
 
  const usersController = {
@@ -40,6 +44,7 @@
         
       });
     }     
-  };
+
+  }       };
   export default usersController;
 
