@@ -1,18 +1,17 @@
 body  {
     margin:0px;
-    padding:10px;
-    
+    padding:10px;  
     background-color: #1E4258;
 }
 .navbar
 {
     display:inline;
     text-transform: capitalize;
-font-family: 'Courier New', Courier, monospace;
-font-size: 1px;
-color: white;
-    text-align: center;
-    padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1px;
+     color: white;
+     text-align: center;
+     padding-bottom: 20px;
 }
 .text-primary
 {
@@ -59,6 +58,9 @@ a {
     text-decoration: none;
     color: darkgoldenrod;
 }
+/* body a:visited, .navbar a:visited,.menu a:visited {
+background-color: red;
+} */
 div.signup,div.login,div.availableTrip {
     border-radius: 20em;
     align-content: center;
@@ -74,7 +76,9 @@ div.contents {
     padding: 12px;
     margin-left:15%;
     box-shadow: 8px 9px 9px 9px;
-    margin-top: 23px;
+    margin-top: 23px;    
+    padding:23px;
+    /*margin-bottom: 14px;*/
 
     
 }
@@ -82,23 +86,19 @@ div.content-heading
 {
     background-color: #4287f5;
     text-transform: capitalize;
-    font-size: 13;
+    font-size: 13px;
 }
-/* div.grid-container{
-    padding-top: 30px;
-    display: grid;
-    grid-template-columns: 12% 85%;
 
-} */
 input[type=text],input[type=number],input[type=date],input[type=password],input[type=email],select{
     
     border: 2px solid #4287f5;
     width: 40%;
     height: 30px;
-}
+    margin-top:14px;
+    margin-bottom:14px;
+    }
 input:hover {
     
-    /* box-shadow: 3px 2px 3px 4px; */
     background-color: antiquewhite;
 }
 input[type=submit]{
@@ -162,4 +162,19 @@ background-color: #4caf50;
     font-size: 2em;
     background-color:#EDC7B7;
 
+}
+#keyword,h3.text-primary {
+    align-self: center;
+    padding:20px;
+    margin-left:10%;
+}
+.active {
+    border:1px solid #4caf50;
+    background-color:#c0c1bc;
+    color:#fff;
+}
+.activeAdmin {
+    border:1px solid #6df872;
+    background-color:#b5eff1;
+    color:#fff;
 }
