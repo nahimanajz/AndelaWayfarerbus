@@ -24,7 +24,7 @@ function myFunction() {
        tr = table.getElementsByTagName("tr");
 
        for(i = 0; i<tr.length; i++){
-           td = tr[i].getElementsByTagName("td")[1];
+           td = tr[i].getElementsByTagName("td")[4];
            if(td){
                txtVlue=td.textContent || td.innerText;
                if(txtVlue.toUpperCase().indexOf(filter) > -1) {
@@ -36,13 +36,13 @@ function myFunction() {
            }
        }
   }
-  function filterDestination(){
+  function filterOrigin(){
     var input, filter, table, tr, td,i,txtVlue;
-    input = document.getElementById("keyword");
+    input = document.getElementById("myOrigin");
     filter = input.value.toUpperCase();
     table = document.getElementById("destTable");
     tr = table.getElementsByTagName("tr");
-
+      
     for(i = 0; i<tr.length; i++){
         td = tr[i].getElementsByTagName("td")[3];
         if(td){
@@ -56,3 +56,25 @@ function myFunction() {
         }
     }
 }
+  function filterDestination(){
+    var input, filter, table, tr, td,i,txtVlue;
+    input = document.getElementById("myDestination");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("destTable");
+    tr = table.getElementsByTagName("tr");
+
+    for(i = 0; i<tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[4];
+        if(td){
+            txtVlue=td.textContent || td.innerText;
+            if(txtVlue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display ="";
+            }
+            else{
+                tr[i].style.display="none";
+            }
+            
+        } 
+        }
+    }
+
