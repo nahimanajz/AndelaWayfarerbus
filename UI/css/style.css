@@ -1,18 +1,17 @@
 body  {
     margin:0px;
-    padding:10px;
-    
+    padding:10px;  
     background-color: #1E4258;
 }
 .navbar
 {
     display:inline;
     text-transform: capitalize;
- font-family: 'Courier New', Courier, monospace;
- font-size: 1px;
- color: white;
- text-align: center;
- padding-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1px;
+     color: white;
+     text-align: center;
+     padding-bottom: 20px;
 }
 .text-primary
 {
