@@ -1,24 +1,29 @@
-<!-- origin | destination | bus licence number | username |tripdate -->
-<!-- trip id | bookingid |tripdate | username /phone number / buslicence number-->
 
 <html><header>
     <title>wayfare add trip</title>
-<link href="../css/style.css" type="text/css" rel="stylesheet"></header>
+<link href="../css/style.css" type="text/css" rel="stylesheet">
+<script src="../js/main.js"></script>
+</header>
 <body>
 <div class="navbar">
 <h3 class="text-primary"> wayfare transportation</h3>
 </div>
 <div class="menu">
     <ul>
-        <li><a href="bookAseat.html">Bookings</a></li>
-            <li><a href="allTrips-user.html">Trips</a></li>
-            <li><a href="basedOnDestination.html">filtered trip</a></li>
-            
+            <li><a href="userbookings.html" class="active">All BOOKINGS</a></li> 
+            <li><a href="bookAseat.html">Book a Trip</a></li>
+            <li><a href="allTrips-user.html">filter trips</a></li>           
 
     </ul>
 </div>
+<!-- <div class="contents"> -->
+    <table class="table-stripped" id="destTable">
+<tr><td colspan="4"> <h3 class="text-primary">These are Filtable Trips based on destination</h3>
+    <input placeholder="search based on Origin" id="myOrigin" type="text" onkeyup="filterOrigin()"></td>
+<td colspan="3"> <h3 class="text-primary">These are based on origin </h3>
+    <input placeholder="search based on destination" id="myDestination" type="text" onkeyup="filterDestination()"></td>
+</tr>
 
-    <table class="table-stripped">
         <tr><th colspan="7"><h4 class="text-primary">All trips recorded in System</h4></th></tr>
 <tr>
     <th>trip Id</th><th>Sitting Capacity</th><th>Bus Licence Number</th><th>Origin </th><th>Destination</th><th>Trip date</th><th>Book trip</th>
@@ -53,4 +58,5 @@
 <tr><td colspan="7"><a href="specificTrips.html">click here to see specific trips</a></th></tr>
     </table>
     </div>
+</div>
     </body></html>
