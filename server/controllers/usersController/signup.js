@@ -1,9 +1,11 @@
+import jwt from 'jsonwebtoken'
 import users from '../../data/users';
-import { jwtAuthorization } from '../../helpers/authorization';
+// import { jwtAuthorization } from '../../helpers/authorization';
 import DataValidation from '../../helpers/DataValidation';
 
 export const createAccount = (req, res) => {
-  const token = jwtAuthorization(req, res);
+  const payload = req.body;
+  const token = jwt.sign(payload, 'jwtPrivateKey');
 
   const checkEmail = users.find(user => user.email === req.body.email);
   if (checkEmail) {
